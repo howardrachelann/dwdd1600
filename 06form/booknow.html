@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rachel Howard">
+    <meta name="description"
+        content="To make it easy for clients to view my work, explore services, and book nail appointments with me—all in one aesthetic, professional space that reflects my creative style.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="traveler.css">
+    <title>Claws by Rach: About</title>
+</head>
+
+<body>
+
+
+    <!--start the page head-->
+    <header>
+        <span>Claws by Rach</span>
+
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="visit.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="booknow.html">Book Now</a></li>
+        </ul>
+
+    </nav>
+
+    <!--start the main content-->
+    <main>
+        <h1>Book Now</h1>
+        <form method="get" class="myForm" action="thanks.html">
+            <fieldset>
+                <legend>Client Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="000-000-0000"></label>
+                <label>Email<input type="email" name="email"></label>
+                <label>Instagram<input type="text" name="instagram"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select a Category</legend>
+                <label><input type="radio" name="category" value="structuregelmanicure">Structure Gel Manicure
+                    $38</label>
+                <label><input type="radio" name="category" value="gelxextension">Gelx Extension $40</label>
+                <label><input type="radio" name="category" value="completeremoval">Complete Removal $10</label>
+
+                <label>Add ons
+                    <select name="addons">
+                        <option value="none">Please Select</option>
+                        <option value="tier1">Tier 1 Art +$5</option>
+                        <option value="tier2">Tier 2 Art +$10</option>
+                        <option value="tier3">Tier 3 Art +$12</option>
+                        <option value="nailfix">Nail Fix +$3~6</option>
+                        </select>
+                    </label>
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred Contact Method</legend>
+                <label><input type="checkbox" name="text" value="chosen">Text</label>
+                <label><input type="checkbox" name="email" value="chosen">Email</label>
+                <label><input type="checkbox" name="instagram" value="chosen">Instagram</label>
+            </fieldset>
+
+            <label>Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+
+
+            <input type="submit" value="Submit Appointment">
+
+        </form>
+    </main>
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2025 &bull; Rachel Howard &bull; Web Essentials</p>
+
+    </footer>
+
+</body>
+
+</html>
