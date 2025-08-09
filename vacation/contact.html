@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rachel Howard">
+    <meta name="description" content="To promote budget friendly vacation destinations">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="traveler.css">
+    <title>Budget Vacations: Contact Us</title>
+</head>
+
+<body>
+    <!--start the page head-->
+    <header>
+        <span>Budget Vacations</span>
+    </header>
+    <!--start the page navigation-->
+    <nav>
+
+        <ul>
+
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="cat"><a href="contact.html">Contact Us</a>
+            </li>
+
+        </ul>
+    </nav>
+    <!--start the main content-->
+    <main>
+
+        <h1>Contact Us</h1>
+         <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Traveler Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Amont of Travelers</legend>
+                <label><input type="radio" name="travelers" value="1-2 people"> 1-2 people</label>
+                <label><input type="radio" name="travelers" value="3-4 people"> 3-4 people (4hrs)</label>
+                <label><input type="radio" name="travelers" value="4+ group"> 4+ group (6hrs)</label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Interested Vacation Spot</legend>
+                <label> <input type="checkbox" name="hawaii" value="chosen"> Hawaii</label>
+                <label> <input type="checkbox" name="italy" value="chosen"> Italy</label>
+                <label> <input type="checkbox" name="thailand" value="chosen"> Thailand</label>
+                <label> <input type="checkbox" name="egypt" value="chosen"> Egypt</label>
+                <label> <input type="checkbox" name="mexico" value="chosen"> Mexico</label>
+                <label> <input type="checkbox" name="uk" value="chosen"> UK</label>
+
+                <label>Preferred Time of Year
+                    <select name="time"> 
+                    <option value="none">Please Select</option>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+
+                        </select>
+                </label>
+            </fieldset>
+
+            <label> Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+
+            <input type="submit" value="Send Delivery Request">
+        </form>
+         
+    </main>
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2025 &bull; Rachel Howard &bull; Web Essentials</p>
+    </footer>
+
+</body>
+
+</html>
